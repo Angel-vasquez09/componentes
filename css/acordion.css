@@ -1,0 +1,70 @@
+.left, .right{
+    cursor    : pointer;
+    position  : absolute;
+    background: white;
+    height    : 100%;
+    width     : 5rem;
+}
+.left{
+    left      : 0;
+    top       : 0;
+    box-shadow: 20px 0px 20px 0px white;
+}
+.left:active i, .right:active i{
+    border: 1px solid rgb(58, 54, 54);
+    border-radius: 50%;
+    padding: .2rem;
+    width: 2rem;
+    height: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.click-lr{
+    border: 1px solid black;
+    border-radius: 50%;
+    padding: .2rem;
+    width: 2rem;
+    height: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.right{
+    right     : 0;
+    top       : 0;
+    box-shadow: -20px 0px 20px 0px white;
+}
+.none{
+    display: none !important;
+}
+
+.acordion{
+    border    : 1px solid white;
+    box-sizing: border-box;
+    height    : 6rem;
+    padding   : .5rem;
+    display   : flex;
+    overflow-x: scroll;
+    scroll-behavior: smooth;
+}
+.acordion::-webkit-scrollbar {
+    -webkit-appearance: none;
+}
+.acordion::-webkit-scrollbar-button:increment,.acordion::-webkit-scrollbar-button {
+    display: none;
+}
+.acordion::-webkit-scrollbar:horizontal {
+    height: 0px;
+}
+
+.imagen{
+    min-width    : 8rem;
+    height       : 100%;
+    margin-left  : .5rem;
+    margin-right : .5rem;
+    border-radius: 1rem;
+    display      : flex;
+    justify-content: center;
+    align-items    : center;
+}
