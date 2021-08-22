@@ -10,6 +10,13 @@
     top       : 0;
     box-shadow: 20px 0px 20px 0px white;
 }
+
+.right{
+    right     : 0;
+    top       : 0;
+    box-shadow: -20px 0px 20px 0px white;
+}
+
 .left:active i, .right:active i{
     border: 1px solid rgb(58, 54, 54);
     border-radius: 50%;
@@ -20,32 +27,19 @@
     align-items: center;
     justify-content: center;
 }
-.click-lr{
-    border: 1px solid black;
-    border-radius: 50%;
-    padding: .2rem;
-    width: 2rem;
-    height: 2rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.right{
-    right     : 0;
-    top       : 0;
-    box-shadow: -20px 0px 20px 0px white;
-}
+
 .none{
     display: none !important;
 }
 
 .acordion{
-    border    : 1px solid white;
-    box-sizing: border-box;
-    height    : 6rem;
-    padding   : .5rem;
-    display   : flex;
-    overflow-x: scroll;
+    border     : 1px solid transparent;
+    box-sizing : border-box;
+    height     : 10rem;
+    padding    : .5rem;
+    display    : flex;
+    align-items: center;
+    overflow-x : scroll;
     scroll-behavior: smooth;
 }
 .acordion::-webkit-scrollbar {
@@ -59,12 +53,18 @@
 }
 
 .imagen{
-    min-width    : 8rem;
-    height       : 100%;
-    margin-left  : .5rem;
-    margin-right : .5rem;
-    border-radius: 1rem;
-    display      : flex;
+    min-width      : 8rem;
+    height         : 75%;
+    margin-left    : .5rem;
+    margin-right   : .5rem;
+    border-radius  : 1rem;
+    display        : flex;
     justify-content: center;
     align-items    : center;
+    cursor         : pointer;
+}
+
+.imagen:hover{
+    transform: scale(1.2);
+    box-shadow: 7px 7px 14px #cccecf, -7px -7px 14px #ffffff;
 }
